@@ -1,0 +1,29 @@
+type Weapon {
+    id: Int
+    name: String
+    type: WeaponType
+}
+
+type Help {
+    countryName: String
+    weaponAmount: Int
+}
+
+type Country {
+    id: Int
+    name: String
+    minister: String
+    ukrainiansOpinion: String
+    supplies: [Supply]
+}
+
+type Supply {
+    weapon: Weapon
+    amount: Int
+}
+
+enum WeaponType {
+    TANK,
+    AVIATION,
+    ARTILLERY
+}

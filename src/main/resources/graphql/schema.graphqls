@@ -1,0 +1,6 @@
+type Query {
+    countries: [Country]
+    help(id: Int): Help
+    country(id: Int): Country
+    weapons: [Weapon]
+}
